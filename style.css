@@ -1,0 +1,144 @@
+:root {
+  --first-color: #d51a5f;
+  --text-color: #000;
+  --max-width: 1200px;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+}
+
+body {
+  user-select: none;
+  background-color: var(--first-color);
+}
+
+.width-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: inherit;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/fondo.png);
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.main-container h1 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+.main-container h2 {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  background-color: var(--first-color);
+  border: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+}
+
+@media (min-width: 375px) {
+  .main-container h1 {
+    font-size: 1.65em;
+    margin-bottom: 30px;
+  }
+
+  .main-container h2 {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  button {
+    width: 130px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 600px) {
+  .main-container h1 {
+    font-size: 1.95em;
+    margin-bottom: 40px;
+  }
+
+  .main-container h2 {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+  }
+
+  button {
+    width: 135px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-container h1 {
+    font-size: 2.25em;
+    margin-bottom: 65px;
+  }
+
+  .main-container h2 {
+    font-size: 1.35rem;
+    margin-bottom: 60px;
+  }
+
+  button {
+    width: 200px;
+    height: 60px;
+  }
+}
